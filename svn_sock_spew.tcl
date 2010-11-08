@@ -40,7 +40,7 @@ proc commit_info {channel repo rev} {
 
 	set files []
 	foreach line $changed {
-		set files "${files}[lindex $line 1] "
+		set files "${files}[lindex [split $line] 1] "
 	}
 	set files [string trim $files]
 
