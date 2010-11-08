@@ -5,7 +5,9 @@
 # by cd
 # feb 11 2010
 #
-# called with argument "myquote" if dir is called ~/public_html/myquote
+# This updates a checked out version of repository to the latest version
+#
+# called with argument "myquote" if dir is called /home/dev/public_html/myquote
 # and repo is called /home/dev/repo/someshit/myquote
 #
 

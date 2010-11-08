@@ -26,8 +26,7 @@ proc spew {str} {
 	close $chan
 }
 
-# Args:
-# IRC channel, repo (/path/to/repo), revision
+# Args: IRC channel, repo (/path/to/repo), revision
 proc commit_info {channel repo rev} {
 	catch {exec /usr/local/bin/svnlook author $repo --revision $rev} author
 	catch {exec /usr/local/bin/svnlook changed $repo --revision $rev} changed
